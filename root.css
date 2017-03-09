@@ -1,0 +1,16 @@
+/*@media (max-width: 321px) {
+  @viewport {
+    width: 320px;
+  }
+}*/
+
+.banner {
+  font-family: 'Droid Sans Mono', monospace;
+}
+
+.title {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
