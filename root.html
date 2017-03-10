@@ -26,15 +26,20 @@
       </div>
     </header>
     <section id="ham-menu" class="hide">
-      <div>home</div>
-      <div>about</div>
-      <a href="projects.html"><div>projects</div></a>
+      <div id="ham-button-home">home</div>
+      <div id="ham-button-about">about</div>
+      <div id="ham-button-projects">projects</div>
       <div>contact</div>
       <a href="https://github.com/jaderager"><div>github</div></a>
     </section>
   </div>
   <section id="sub-header">
-    <article>
+    <article id="projects" class="template project hide">
+      <h2></h2>
+      <p></p>
+      <a>Link</a>
+    </article>
+    <article id="home">
       <h2>Come on in.</h2>
       <p>This is the digital portfolio of Jade Rager, a full-stack student enrolled in the Codefellows training program.</p>
       <p>We're not living in the 210th decade any more. The web has quickly become a symbol of universal access to information.</p>
@@ -46,8 +51,13 @@
       <p>It's a wonder that it ever wasn't - resizable windows aren't new.</p>
       <p>Mobile is not a trend that can or should be stopped, and <a href=http://www.theverge.com/2016/12/8/13881930/microsoft-turn-a-phone-into-a-pc-arm-continuum>certain developments</a> are blurring the markets between desktop and mobile even further.</p>
     </article>
+    <article id="about" class="hide">
+      <h2>About</h2>
+      <p>About Me</p>
+    </article>
   </section>
 
   <script src="menu.js"></script>
+  <script src="projects.js"></script>
 </body>
 </html>

@@ -26,4 +26,22 @@ $(document).ready(function() {
     iHamburgerMenu.toggle();
 
   });
+
+  $('#ham-button-home').on('click', function() {
+    $('#home').removeClass('hide');
+    $('#about').addClass('hide');
+    $('#sub-header article.project').addClass('hide');
+  });
+
+  $('#ham-button-about').on('click', function() {
+    $('#home').addClass('hide');
+    $('#about').removeClass('hide');
+    $('#sub-header article.project').addClass('hide');
+  });
+
+  $('#ham-button-projects').on('click', function() {
+    $('#home').addClass('hide');
+    $('#about').addClass('hide');
+    $('#sub-header article.project').removeClass('hide');
+  });
 });
