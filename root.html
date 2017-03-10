@@ -2,13 +2,20 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="common.css">
-  <link rel="stylesheet" type="text/css" href="root.css">
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <link rel="stylesheet" type="text/css" href="module.css">
   <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="jquery-3.1.1.js"></script>
   <title>mobile 0st</title>
+
+  <script id="template" type="text/x-handlebars-template">
+    <article id="projects" class="template project hide">
+      <h2>{{heading}}</h2>
+      <p>{{description}}</p>
+      <a href="{{url}}">Link</a>
+    </article>
+  </script>
 </head>
 <body>
   <div id="header-menu-container">
@@ -34,11 +41,7 @@
     </section>
   </div>
   <section id="sub-header">
-    <article id="projects" class="template project hide">
-      <h2></h2>
-      <p></p>
-      <a>Link</a>
-    </article>
+
     <article id="home">
       <h2>Come on in.</h2>
       <p>This is the digital portfolio of Jade Rager, a full-stack student enrolled in the Codefellows training program.</p>
@@ -56,6 +59,9 @@
       <p>About Me</p>
     </article>
   </section>
+
+  <script src="jquery-3.1.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
 
   <script src="menu.js"></script>
   <script src="projects.js"></script>

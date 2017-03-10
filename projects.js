@@ -33,6 +33,13 @@ Project.prototype.genProjectHtml = function() {
   return $template;
 }
 
+Project.prototype.handlebars = function() {
+  var source = $('#template').html();
+  var template = Handlebars.compile(source);
+  var html = template(this);
+  return html;
+}
+
 projectData.forEach(function(ele) {
   projectArray.push(new Project(ele));
 });
@@ -44,6 +51,6 @@ $(document).ready(function() {
 
   projectArray.forEach(function(currentValue) {
     console.log('projectArray.forEach');
-    $('#sub-header').append(currentValue.genProjectHtml());
+    $('#sub-header').append(currentValue.handlebars());
   });
 });

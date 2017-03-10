@@ -1,0 +1,63 @@
+.icon {
+  display: block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: black;
+  fill: white;
+  /*float: left;*/
+  
+}
+
+.title {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  overflow: hidden;
+}
+
+#header-menu-container {
+  margin-bottom: 5.47008547008547%;
+}
+
+header h1 {
+  font-size: 200%; /*48px*/
+  font-weight: 300;
+  /*display: block;
+  float: left;*/
+}
+
+header div {
+  /*border: 1px solid red;*/
+  overflow: hidden;
+  float: left;
+}
+
+header #header-left {
+  margin-left: 4px;
+}
+
+header #header-right {
+  /*margin-left: 17%;*/
+  width: calc(100% - 40px);
+}
+
+#ham-button {
+  user-select: none;
+}
+
+section#ham-menu {
+  background-color: black;
+  width: calc(100% - (100% - 320px))
+}
+
+#ham-menu div {
+  color: darkviolet;
+  font-size: 150%;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+}
