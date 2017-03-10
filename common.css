@@ -101,7 +101,13 @@ a:hover {
 }
 
 .hide {
-   position: absolute !important;
-   top: -9999px !important;
-   left: -9999px !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.template {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
