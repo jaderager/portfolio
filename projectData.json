@@ -1,0 +1,17 @@
+[
+  {
+    "heading": "Salmon Cookies",
+    "description": "Salmon Cookies was a mockup for an implausible business idea meant to provide some practice for fixed layouts and DOM tree manipulation.",
+    "url": "https://jaderager.github.io/cookie_stand/"
+  },
+  {
+    "heading": "Bus-Mall",
+    "description": "Bus-Mall was an exercise in javascript and library use.",
+    "url": "https://jaderager.github.io/bus-mall/"
+  },
+  {
+    "heading": "Beer Buddies",
+    "description": "Beer Buddies was a collaborative project which built github workflow skills as well as team skills.",
+    "url": "https://jaderager.github.io/beer_buddies/"
+  }
+]
