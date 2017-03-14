@@ -1,21 +1,3 @@
-var projectData = [
-  {
-    heading: 'Salmon Cookies',
-    description: 'Salmon Cookies was a mockup for an implausible business idea meant to provide some practice for fixed layouts and DOM tree manipulation.',
-    url: 'https://jaderager.github.io/cookie_stand/',
-  },
-  {
-    heading: 'Bus-Mall',
-    description: 'Bus-Mall was an exercise in javascript and library use.',
-    url: 'https://jaderager.github.io/bus-mall/',
-  },
-  {
-    heading: 'Beer Buddies',
-    description: 'Beer Buddies was a collaborative project which built github workflow skills as well as team skills.',
-    url: 'https://jaderager.github.io/beer_buddies/',
-  },
-]
-
 var projectArray = [];
 
 var Project = function(options) {
@@ -40,9 +22,25 @@ Project.prototype.handlebars = function() {
   return html;
 }
 
-projectData.forEach(function(ele) {
-  projectArray.push(new Project(ele));
-});
+if (!localStorage['projectData']) { // data is not found in localStorage
+  $.ajax({
+    type: 'GET',
+    url: '../projectData.json',
+    success: function(fetch) {
+      fetch.forEach(function(ele) {
+        projectArray.push(new Project(ele));
+      });
+      localStorage['projectData'] = JSON.stringify(projectArray);
+    }
+
+  }); //ajax
+} else {
+  JSON.parse(localStorage['projectData']).forEach(function(ele) {
+    projectArray.push(new Project(ele));
+  });
+}
+
+
 
 
 
