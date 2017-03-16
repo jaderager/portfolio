@@ -6,14 +6,16 @@ var Project = function(options) {
   this.url = options.url;
 }
 
-Project.prototype.genProjectHtml = function() {
-  var $template = $('article.template').clone();
-  $template.find('h2').text(this.heading);
-  $template.find('p').text(this.description);
-  $template.find('a').attr('href', this.url);
-  $template.removeClass('template').removeClass('hide');
-  return $template;
-}
+/* Completely antiquated code, for my own reference */
+
+// Project.prototype.genProjectHtml = function() {
+//   var $template = $('article.template').clone();
+//   $template.find('h2').text(this.heading);
+//   $template.find('p').text(this.description);
+//   $template.find('a').attr('href', this.url);
+//   $template.removeClass('template').removeClass('hide');
+//   return $template;
+// }
 
 Project.prototype.handlebars = function() {
   var source = $('#template').html();
